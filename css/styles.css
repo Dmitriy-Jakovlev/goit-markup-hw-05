@@ -780,12 +780,12 @@ main {
   right: 8px;
   cursor: pointer;
 }
-.icon-close-btn {
+.icon-btn-close {
   width: 11px;
   height: 11px;
 }
-.close-btn:hover .icon-close-btn,
-.close-btn:focus .icon-close-btn {
+.btn-close:hover .icon-btn-close,
+.btn-close:focus .icon-btn-close {
   fill: var(--accent-color);
 }
 /*============LINE-HEADER========*/
