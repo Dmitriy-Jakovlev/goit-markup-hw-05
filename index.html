@@ -82,7 +82,7 @@
 
       <section class="features section">
         <div class="container">
-          <h2 hidden>Особенности</h2>
+          <h2 class=".visually-hidden">Особенности</h2>
           <ul class="features-list list">
             <li class="features-list-item-antenna">
               <h3 class="features-title">Внимание к деталям</h3>
@@ -457,8 +457,29 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form-wrapper">
+          <div class="footer-wrapper">
+            <h4 class="footer-form-title">Подпишитесь на рассылку</h4>
+            <form action="#" method="GET" class="form-footer">
+              <input type="email" name="footer-email" required placeholder="E-mail" class="footer-input">
+            
+              <button type="submit" class="btn-footer-form">
+                <span class="footer-btn-text">Подписаться</span> 
+               <svg width="24" height="24" class="footer-btn-svg">
+                 <use href="./images/sprite.svg#icon-send"></use>
+               </svg>
+              </button>
+             
+          </form>
+            
+          </div>
+          
+        </div>
       </div>
     </footer>
+
+<!--MODAL-->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="btn-close" data-modal-close>
@@ -466,6 +487,53 @@
             <use href="./images/sprite.svg#close"></use>
           </svg>
         </button>
+
+        <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <form action="#" method="GET" class="contact-form">
+          <label for="user-name" class="form-label">
+            Имя
+            <span class="contact-form-wrapper">
+               <input type="text" name="user-name" required minlength="2" class="form-input">
+               <svg width="18" height="18" class="modal-form-svg">
+                 <use href="./images/sprite.svg#person"></use>
+               </svg>
+            </span>          
+          </label>
+                
+          <label for="user-tel" class="form-label">Телефон
+
+            <span class="contact-form-wrapper">
+               <input type="tel" name="user-tel" required class="form-input">
+               <svg width="18" height="18" class="modal-form-svg">
+                 <use href="./images/sprite.svg#phone"></use>
+               </svg>
+            </span>          
+          </label>
+          
+           <label for="user-email" class="form-label">
+             Почта
+             <span class="contact-form-wrapper">
+               <input type="email" name="user-email" required class="form-input">
+               <svg width="18" height="18" class="modal-form-svg">
+                 <use href="./images/sprite.svg#email"></use>
+               </svg>
+             </span>          
+          </label>
+                 
+           
+           <label for="user-comment" class="form-label">Комментарий</label>
+           <textarea name="user-comment"  placeholder="Введите текст" class="form-comment"></textarea>
+           <input type="checkbox" name="user-terms" value="accept-policy" 
+           id="user-contract" class="form-checkbox visually-hidden">
+          <label for="user-contract" class="modal-checkbox-label">
+            Соглашаюсь с рассылкой и принимаю
+            <a class="contract-link" href="#"> Условия договора</a>
+        </label>  
+           <button type="submit" class="btn-form">Отправить</button>
+           
+
+
+        </form>
       </div>
     </div>
 
